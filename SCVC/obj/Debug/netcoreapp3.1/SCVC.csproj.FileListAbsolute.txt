@@ -37,3 +37,17 @@
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/obj/Debug/netcoreapp3.1/SCVC.csproj.CopyComplete
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Informacion.cshtml.g.cs
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/Remotion.Linq.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/System.Interactive.Async.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Creditos.cshtml.g.cs

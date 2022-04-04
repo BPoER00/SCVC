@@ -14402,6 +14402,11 @@
   "RootNamespace": "SCVC",
   "Documents": [
     {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/Views/Home/Creditos.cshtml",
+      "TargetPath": "Views\\Home\\Creditos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
