@@ -5494,28 +5494,36 @@
     ]
   },
   "packageFolders": {
-    "/home/mrkobp/.nuget/packages/": {}
+    "C:\\Users\\emman\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC.csproj",
+      "projectUniqueName": "C:\\Users\\emman\\Desktop\\mundo\\SCVC\\SCVC\\SCVC.csproj",
       "projectName": "SCVC",
-      "projectPath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC.csproj",
-      "packagesPath": "/home/mrkobp/.nuget/packages/",
-      "outputPath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/obj/",
+      "projectPath": "C:\\Users\\emman\\Desktop\\mundo\\SCVC\\SCVC\\SCVC.csproj",
+      "packagesPath": "C:\\Users\\emman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emman\\Desktop\\mundo\\SCVC\\SCVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/mrkobp/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\emman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5527,6 +5535,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -5561,7 +5570,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.408/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

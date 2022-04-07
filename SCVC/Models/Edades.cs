@@ -8,7 +8,11 @@ namespace SCVC.Models
     {
         [Key]
         public int IdEdad { get; set; }
+        [Required(ErrorMessage = "El Campo Nombre Edad Es Necesario")]
+        [StringLength(100, ErrorMessage = "El Campo No Puede Ser Mayor A 100")]
         public string NombreEdad { get; set; }
+        [Required(ErrorMessage = "El Campo Descripción  Es Necesario")]
+        [StringLength(100, ErrorMessage = "El Campo No Puede Ser Mayor A 100")]
         public string Descripcion { get; set; }
         
     }
