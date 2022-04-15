@@ -186,3 +186,4 @@ C:/Users/emman/Desktop/mundo/SCVC/SCVC/obj/Debug/netcoreapp3.1/SCVC.genruntimeco
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_MenuPrincipal.cshtml.g.cs
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/DotNet.Cookies.dll

@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using RestSharp;
 using SCVC.Models;
 
 namespace SCVC.Api
@@ -22,21 +19,65 @@ namespace SCVC.Api
                 var json = JsonConvert.SerializeObject(login);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 var respuesta = await httpClient.PostAsync(url, content);
-                var result = await respuesta.Content.ReadAsStringAsync();  
+                var result = await respuesta.Content.ReadAsStringAsync();
                 var dato = JsonConvert.DeserializeObject<Reply>(result);
 
-                if(dato.result == 1)
+                if (dato.result == 1)
                 {
                     return dato;
                 }
                 else
                 {
-                    return null;
+                    return dato = new Reply()
+                    {
+                        result = 0
+                    };
                 }
             }
             catch
             {
-                return null;
+                return new Reply()
+                {
+                    result = 0
+                };
+            }
+        }
+
+        public async Task<Reply> ValidationToken(string token, string url)
+        {
+            try
+            {
+                var httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var respuesta = await httpClient.GetAsync(url);
+                var result = await respuesta.Content.ReadAsStringAsync();
+                var dato = JsonConvert.DeserializeObject<Reply>(result);
+
+                if (dato.result != 1)
+                {
+                    dato = new Reply()
+                    {
+                        result = 0,
+                        data = false,
+                        message = "Token Invalido"
+                    };
+
+                    return dato;
+                }
+                else
+                {
+                    return dato;
+                }
+
+            }
+            catch
+            {
+                return new Reply()
+                {
+                    result = 0,
+                    data = false,
+                    message = "Token Invalido"
+                };
             }
         }
 
