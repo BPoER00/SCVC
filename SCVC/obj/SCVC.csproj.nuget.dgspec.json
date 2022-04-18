@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj": {}
+    "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj": {}
   },
   "projects": {
-    "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj": {
+    "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj",
+        "projectUniqueName": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj",
         "projectName": "SCVC",
-        "projectPath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj",
+        "projectPath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj",
         "packagesPath": "/home/mrkobp/.nuget/packages/",
-        "outputPath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/obj/",
+        "outputPath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mrkobp/.nuget/NuGet/NuGet.Config"

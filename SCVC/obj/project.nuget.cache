@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A2OE4u2uR9RojbEqAM2Zpr01WTegNzVVCy2zK2PZU25Qd8QUyH7KwTyY71Qprr+jdBHHpbpNKKQ2HbfVraoiYw==",
+  "dgSpecHash": "8V9WXHM2edZmkcp6M/E+HTIwgcD/H/wjOMJOYCVD8bBKSlrIa36z8PIOlAOkvV186b5p7I0NGlJVWJn/5hhaJw==",
   "success": true,
-  "projectFilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj",
+  "projectFilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj",
   "expectedPackageFiles": [
     "/home/mrkobp/.nuget/packages/dotnet.cookies/1.0.0/dotnet.cookies.1.0.0.nupkg.sha512",
     "/home/mrkobp/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",

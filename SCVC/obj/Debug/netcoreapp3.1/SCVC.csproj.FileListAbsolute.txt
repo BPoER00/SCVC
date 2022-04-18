@@ -142,7 +142,6 @@ C:/Users/emman/Desktop/mundo/SCVC/SCVC/obj/Debug/netcoreapp3.1/SCVC.genruntimeco
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/SCVC.RazorCoreGenerate.cache
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Creditos.cshtml.g.cs
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Informacion.cshtml.g.cs
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
 /home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
@@ -270,3 +269,9 @@ C:/Users/emman/Desktop/mundo/SCVC/SCVC/obj/Debug/netcoreapp3.1/SCVC.genruntimeco
 /home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/obj/Debug/netcoreapp3.1/SCVC.dll
 /home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/obj/Debug/netcoreapp3.1/SCVC.pdb
 /home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/obj/Debug/netcoreapp3.1/SCVC.genruntimeconfig.cache
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/obj/Debug/netcoreapp3.1/Razor/Views/Opciones/MenuPrincipal.cshtml.g.cs
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/publish/web.config
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/publish/appsettings.Development.json
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/publish/appsettings.json
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/publish/SCVC.deps.json
+/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/bin/Debug/netcoreapp3.1/publish/SCVC.runtimeconfig.json

@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/SCVC.csproj",
+  "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/SCVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,58 +14402,58 @@
   "RootNamespace": "SCVC",
   "Documents": [
     {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Home/_Informacion.cshtml",
-      "TargetPath": "Views\\Home\\_Informacion.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Shared/_MenuPrincipal.cshtml",
-      "TargetPath": "Views\\Shared\\_MenuPrincipal.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Home/Creditos.cshtml",
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Home/Creditos.cshtml",
       "TargetPath": "Views\\Home\\Creditos.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Home/_Login.cshtml",
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Home/_Login.cshtml",
       "TargetPath": "Views\\Home\\_Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Shared/_MenuPrincipal.cshtml",
+      "TargetPath": "Views\\Shared\\_MenuPrincipal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/mrkobp/Descargas/Thompson/SCVC-Bryan/SCVC/Views/_ViewImports.cshtml",
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Home/_Informacion.cshtml",
+      "TargetPath": "Views\\Home\\_Informacion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Opciones/MenuPrincipal.cshtml",
+      "TargetPath": "Views\\Opciones\\MenuPrincipal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mrkobp/Desktop/VisualStudioCode/ProyectosC#/SCVC/SCVC/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
