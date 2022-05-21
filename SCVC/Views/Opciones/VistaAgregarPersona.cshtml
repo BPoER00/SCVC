@@ -1,0 +1,67 @@
+@model PersonasViewModel
+@{
+    ViewData["Title"] = "Agregar Persona";
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+
+    <form asp-controller="GuardarDatosPersona" asp-action="GuardarPersona" method="post">
+        <div class="row">
+            <div class="form-group col">
+                <label>Nombre: </label>
+                <input type="text" asp-for="NombrePersona" class="form-control" required="" pattern="[A-Za-z ]+">
+                <span asp-validation-for="NombrePersona"></span>
+            </div>
+            <div class="form-group col">
+                <label>CUI: </label>
+                <input type="number" asp-for="CUI" class="form-control">
+                <span asp-validation-for="CUI"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+                <label>Direccion: </label>
+                <select class="form-control" asp-for="IdDireccionFK" asp-items="@(new SelectList(ViewBag.Direcciones, "IdDireccion" , "NombreDireccion"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label>Genero: </label>
+                <select class="form-control" asp-for="IdGeneroFK" asp-items="@(new SelectList(ViewBag.Generos, "IdGenero" , "NombreGenero"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+                <label>Etnia: </label>
+                <select class="form-control" asp-for="IdEtniasFK" asp-items="@(new SelectList(ViewBag.Etnias, "IdEtnia" , "NombreEtnias"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label>Rol: </label>
+                <select class="form-control" asp-for="IdRolFK" asp-items="@(new SelectList(ViewBag.Roles, "IdRol" , "NombreRol"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+                <label>Fecha: </label>
+                <input type="date" asp-for="Fecha_Nacimiento" class="form-control" required="" pattern="[A-Za-z]+">
+                <span asp-validation-for="Fecha_Nacimiento"></span>
+            </div>            
+        </div>
+
+        <input type="hidden" asp-for="Token" value="@ViewBag.Token">
+        <input type="hidden" asp-for="usuario" value="@ViewData["Usuario"]">
+        <button type="submit" class="btn btn-primary" style="border-radius: 5rem;">Guardar</button>
+    </form>
+
+</div>
