@@ -1,0 +1,34 @@
+@model BuscarPersona
+@{
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+    <div class="row" style="text-align: center; margin-top: 2rem;">
+        <div class="col">
+            <form asp-controller="Usuarios" asp-action="AgregarUsuario" method="post">
+                <input type="hidden" asp-for="Id" id="Id" value="@ViewBag.Id">
+                <input type="hidden" asp-for="Token" id="Token" value="@ViewBag.Token">
+                <input type="hidden" asp-for="Nombre" id="Nombre" value="@ViewBag.Nombre">
+                <input type="hidden" asp-for="Usuario" id="Usuario" value="@ViewData["Usuario"]">      
+                <button type="submit" class="btn btn-primary">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX////zrS7zrCnzqybzqiD64L7yqRn2w231vFbyqBP40pfzsT3///341aD527LzqyPypgD++fD758b87dT+9+v1vmP98+T0tEP++/b++e/52qn64Lj86cz516P2xXP98N/4z473yX/1u1n3zIb2wnH0t0r3yHv0sjf1u1798Nr2wGf75MZk9o/BAAALVUlEQVR4nO2d53riOhCG17JQEM2GADa9BRzY+7+/Q8kSisrMWLbFeXj/nULwh6XRNEl//rx58+bNmzdv3rx580srvaFV9dM4pNVfTMfL1df3NmORkEdExLLt+mu1HE8X/bTq58tFa19rHLaBkIJHIWPBDYyFEedSBMlgM9m/pMx02l6HQvDwTtgzLORChNtlbVT1E2NI9416LLlF251OLuKkMX2Nd9mt7Zoodb8qZfA16Vf9/BZavV1wNCR4eT+EIhjUPH6Ti40QEVndVaTYfVatREnaWUueV96FSG7H3hmeUaMp6YPzCSaCzbBqTbcMVxHFthjh/GNfta5/DHdx7tmnIowHXmgcbvJbF61GWf17TBuRI/OiJhKrbqUCJ6xQfSc4b1en77Mui9Z3QjR71ehrLUVYhsDT2rGrYqhOE1GOvhM8mJStr7WKXS+ARpg8lOuu7pPCLcwjPJuWKHCWI3wgw+SyLH2tQ4kz8BaxLsfgLJqlj9B/hLyMuGpiy7wUCRPjwgU2XAZJBMSmYIGrUrwYo8RBkdnktCobcwvfFpetSreV2ZhbomZR4X+aFBYI4giDYiT2s5IcbTtMLP7fAk9lD/exf+qTwKPEwPVbTBOvBB4lRm4tarr1xMj8wjKnEgdeLBP3hHWHEePKg4X+GX5wJrBRuaumRuwcCZx4KjAI5MyJwIV3RuYX4SKz0cqqDZeMsMCBQT14aEZ/Cbe5Bc68NKO/5I6I9x5PwgsiX8q/lXg8CS+wLFcCbuX1JLyQa+GfxhU//BXTUJIdssCqx2gya/8w25qeRJAd1GW1dpTVfx/lwxS8RR9EgZ8VLxRghYGo0RQaR0YJwBWyJmmcVu5wwxUGokEQ2Kp8JUQoDCTBP13mWwpZeLbyeQqNGIXRHC1wmMNdY0LK7a7RnrUbmzWLqR1FGIWBRKcXyd4M49F6fPt1/ckuIHVtoBSGA+wrJK4UTCaz5ymR1gYEjSiF6GB4RxtZIulo7PbnB7rwiFOIfIlDkkPKZMNQ2+sFyIGPUxhI1EskvUKeWEpCG9zQRyoMvxEC+xSBYmUtzk4EZqQiFQYxopTRIBhSCXErppj1EaswgqdPU0J6DZi6XATwP41VGMCLNR38UgF2DD/hwwOtkIO90zX6FXL4AKmBHXq0QpYAQ4wFOqgA/+kT4LgarTCQwLzbBm1nYlTnwBro3uAVhl+gB2ihZyFfYgSCpyJeYSBBW216WIUsQ0bYQK+eoBDW9jbH+sjobrr+k0/IpYL4piYxiFX/x9MvxSBljC5SHyVJsnrwmexxQUvFn88nmwiJ9WvYQQpfha7sH56MWnt4VsgB4wntdHNCC1b9fsV1p5CtrR9Ce2ygof/I7H4GuVMYMOswVXzIDGnTzuJ+KjhUaE8Oo8MKXOD5Q3pfEXGoMFrZPlTH+qQxKd18uFuSXI5SmwOZYtMXLCM923021qHCQFri4B52GjJM7uCX+wDNpUKb/4GehojA+pbpvUJiW8zjunp+IMtERE9DpNf9j/vKXbi61kJvuXkbvY4K1ftgTeMXt9B5W4JH86wwCLkCceuXSqFAOeBiY3yxLzpy0ihUQogtTpjDYLRTClh/lEyLU2g2NfiSGroicmFSnMLQWGg7oOchcT2E2GyiQqOpaRFK9zFpG9IX4ImJCoPQ4NX00fqOE5uyJRD0U1IVckOxdEGoGpJ2BILKk1SFJv9hSmi/AMScz4wLVWjoAgN98SOUrR0DUAqbOkoNTgip/4Lj28n7oLFCtjSG5eIxBwaCbdHWFPZLUhWawh2IDX9GYE90SGGTgazQYBm+Sf096FwUMEQjK9SH+ZQF/4TAzURoMxJZob4vmlL7PQMriPzjULDCQL8JI0ULZGF4+mpUG8R5STp+0PplZIWRNkedokwp41Imh/k5R47ofjxnHvhg/lGPpLk1g6xQ6BUiFnwmmo2LRzo+PTK4m7x/6saILiHXsLM2NYPRFWrTbSncaeNZ57oKDk5vUcIakUfn3bbh9Uf+HOi/k6xQn1CEK5SrG4M8Ohso0Ko4PAuMb3+NiXanQZUKH8bkpWwt7QWMfXR60IfeoqFul3iFCp+qH5c8svUop/G5PfFp52dXt0ix+ApqsTAohFka+RwRXrreeWYaqYvB+c8rtrYOmduecoOlAa0Wyv0btfPrYWKgi/i7S35+D1KVm4PkpdwoBP2UkdIn2gfnnyeU654i1FhsLl0FTKgnK85lsT6hfj3MAB/XVUS7l0EYMJktp7deXLpo1+VldGhPJMO3YZnQ14Fhnrf24+PoZ5RzGax3jc7f6d/JbDO4ngzN5FxrikBBP5RM7yYDWvZMAfRoLv/NZBZxIaQ4H8b+829kYsgQ4ZPtekxFUkAEbF7YF3PNcbuR2Bo/iHCn7Arr+u8BZDEiy86NYWMr+f0PdTqKfGWrEDrcRmbKYkDyJ9Zdt619e3AeoOcKmZDxdtmz1/pJKSI1oWE74tiq0FJ/vDLsddrL5bLRqe1heaqc26xuMRX8/lpnA1QhGkrzvAZTRtie1X8JhYY5b6/MvIJCU2UmtW7efgWFockYWl2LF1BofkSrRXsBhabFAhDGvIBCc6XI2m3yAgrNLWTp/2AexuZ6ps099F+hrTnE9kX+K7S1Etq2k/iv0NY50bV00Pqv0Lox3+LVeK/QvkXJ8k3eK7R39FpaarxXaC+fWDKK3isM7Tt4zNko3xVCuibMrqnvCiE7eEbm38hzhRKyzczYReu5QpZAvsuYfvZcIazHzlhF9FwhaJCa91j6rTAEHqFo2oLot0JgQ4gxSPRaIXzPtaFV2GuF8P07hiXRb4XwI3j0SUWfFULtzInhSypE7fzQut8eKzSVfp/Z65IZHisELxUXdM6pvwqxO1tUO2z9VojeLT1Xu26FKcxb5cZvTtJVMLCn7UAhHtR4hXC0g+a0KH3PWD5ydptQtrJ21T9qzmPsdWBazFUAw6Z72sov5cXczoc+y8HJUzVVA4d4sLQN9OFU9w9l72NSot5Rjt7HBQG2XU+LqYPGiPLUMZYUcMMi/hC8W4g75v+cjv1SjVPS6eBmcp5vb6n6mlCf4hi7vtA1Vc54MLnuRPpQjlPX99atc632IWWr9RX1fj2Wubx9sJXzUjeWzwdRF9uYQ4O6yHnFt8z7KA21EZAfbry3NO/9whx/oP4jmtNGIzGf5l77940sb0jhwAHp6o5vjkRzsBzXqHQa88R8Qw4ERHpNj36xYiFXnW0EhDu44NuRPSCdJVEKYulEIPq0+NJweImlj9eQHg0B/rgKLa26hxfMhc1cF6490G96dh3w0cwxt77jEHEefjngL5ax0M+9dDmFCdcBztF/dLxZNxeMu7hi9ZG9RwPVyR2yzwzzXE/lEkY6QQ3CKPNi0QgD10bml37dg6U/ajpOMdyRHip34PjW5UKvYFfxnYHiUEAy854Z6kYj5wKXRes7Mg0q8+Bc5odMjLYVTUZeqI25Y1PJSBX6Ixnc08ubQcITMvrFxhS6HyXbVLEuqPisp0O9fJNCGOepTVBJv8qajUx8l/4CL9SSUowqD8qdgbekbVn4UA3lpmA3zUx/Lgtd/5n8Lm0N1LE/kK7ChekT62JCXSSfh2LeI5PrYpp3CEwHsfP5GMq6N/pOLHaa45NoMC4ORWUqyPQbiavBGspsWbl9UdGazi1nrkJgXA5qJbrYSEbjuswzWo/ysllF/guY/ngdCErekUUi2ra9HJ1P9HurROJUhseXt5v4/vZuSYedTRJLQCX7VCqPg9147+/c0zPqjefJqdZ/FMoeyh7Hf778l+zQ7tH70nwg3U87y/n3OsmCSIjT7aHiOICzpP79sexM95V61W5Ju/3h4odhf/SKY/LNmzdv3rx58+bNGzr/AbPw2kNPsmq4AAAAAElFTkSuQmCC" style="width: 11rem; height: 11rem;" alt="Consulta">
+                        <h1>Crear Usuario</h1>
+                </button>
+            </form>
+        </div>
+        <div class="col">
+            <form asp-controller="Usuarios" asp-action="MostrarUsuarios" method="post">
+                <input type="hidden" asp-for="Id" id="Id" value="@ViewBag.Id">
+                <input type="hidden" asp-for="Token" id="Token" value="@ViewBag.Token">
+                <input type="hidden" asp-for="Nombre" id="Nombre" value="@ViewBag.Nombre">
+                <input type="hidden" asp-for="Usuario" id="Usuario" value="@ViewData["Usuario"]">                    
+                    <button type="submit" class="btn btn-primary">
+                        <img src="https://st2.depositphotos.com/1070291/48779/v/600/depositphotos_487791182-stock-illustration-hotel-reception-service-vector-glyph.jpg" style="width: 11rem; height: 11rem;" alt="Consulta Covid">
+                        <h1>Ver Usuarios</h1>
+                    </button>
+            </form>
+        </div>
+    </div>
+</div>

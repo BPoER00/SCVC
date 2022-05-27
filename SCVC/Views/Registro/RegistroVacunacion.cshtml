@@ -1,0 +1,49 @@
+@{
+    Layout = "_MenuPrincipal";
+}
+
+<style>
+    #taula {
+        height: 200px;
+        overflow: auto;
+        width: 220px;
+    }
+</style>
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+    <div style="height: 22rem; overflow-y: scroll;">
+        <table id="taula" class="table table-striped" style=" width:100%;">
+
+            <thead>
+                <tr>
+                    <th>Id Vacuna</th>
+                    <th>Id Persona</th>
+                    <th>Vacuna</th>
+                    <th>Dosis</th>
+                    <th>Fecha Vacunacion</th>
+                    <th>Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Vacunacion item in ViewBag.Vacunacion)
+                {
+                    <tr>
+                        <td>@item.IdVacunacion</td>
+                        <td>@item.Persona.NombrePersona</td>
+                        <td>@item.Vacunas.NombreVacuna</td>
+                        <td>@item.Dosis</td>
+                        <td>@item.Fecha_COMMIT</td>
+                        <td>@item.Usuarios.Usuario</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+$(document).ready( function () {
+    $('#vacunacion').DataTable();
+} );
+</script>

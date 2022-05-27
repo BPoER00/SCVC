@@ -1,0 +1,35 @@
+@{
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+
+    <div style="height: 22rem; overflow-y: scroll;">
+        <table id="persona" class="table table-striped" style="width:100%">
+
+            <thead>
+                <tr>
+                    <th>Id Usuario</th>
+                    <th>Usuario</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Usuarios item in ViewBag.Usuarios)
+                {
+                    <tr>
+                        <td>@item.IdUsuario</td>
+                        <td>@item.Usuario</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        
+    </div>
+</div>
+
+<script>
+$(document).ready( function () {
+    $('#persona').DataTable();
+} );
+</script>

@@ -1,0 +1,36 @@
+@model Usuarios
+
+@{
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+
+        <form asp-controller="Usuarios" asp-action="GuardarUsuarios" method="post">
+            <div class="row">
+                <div class="form-group col">
+                    <label>Usuario: </label>
+                    <input type="text" asp-for="Usuario" class="form-control" required="" pattern="[A-Za-z ]+">
+                </div>
+                <div class="form-group col">
+                    <label>Password: </label>
+                    <input type="password" asp-for="PassUser" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label>Confirmar Password: </label>
+                    <input type="password" asp-for="ConfirmarPass" class="form-control">
+                </div>
+                <div class="form-group col">
+                    <label>Rol: </label>
+                    <select class="form-control" asp-for="IdRol" asp-items="@(new SelectList(ViewBag.roles, "IdRol" , "NombreRol"))">
+                        <option>Seleccione</option>
+                    </select>
+                </div>            
+            </div>
+
+            <input type="submit" class="btn btn-primary">
+        </form>
+</div>

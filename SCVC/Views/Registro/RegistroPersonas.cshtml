@@ -1,0 +1,49 @@
+@{
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+
+    <div style="height: 22rem; overflow-y: scroll;">
+        <table id="persona" class="table table-striped" style="width:100%">
+
+            <thead>
+                <tr>
+                    <th>Id Persona</th>
+                    <th>Nombre Persona</th>
+                    <th>CUI</th>
+                    <th>Direccion</th>
+                    <th>Genero</th>
+                    <th>Etnia</th>
+                    <th>Rol</th>
+                    <th>Estatus</th>
+                    <th>Fecha Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Persona item in ViewBag.Persona)
+                {
+                    <tr>
+                        <td>@item.IdPersona</td>
+                        <td>@item.NombrePersona</td>
+                        <td>@item.cui</td>
+                        <td>@item.Direcciones.NombreDireccion</td>
+                        <td>@item.Generos.NombreGenero</td>
+                        <td>@item.Etnias.NombreEtnias</td>
+                        <td>@item.Roles.NombreRol</td>
+                        <td>@item.estatus</td>
+                        <td>@item.Fecha_Nacimiento</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        
+    </div>
+</div>
+
+<script>
+$(document).ready( function () {
+    $('#persona').DataTable();
+} );
+</script>

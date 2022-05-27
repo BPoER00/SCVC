@@ -1,0 +1,54 @@
+@model Vacunacion
+@{
+    ViewData["Title"] = "Vacunaciones";
+    Layout = "_MenuPrincipal";
+}
+
+<div class="jumbotron border border-primary"
+    style="margin-top: 2rem; height: 30rem; background-color: white; border-radius: 1rem;">
+
+    <form asp-controller="GuardarDatosPersona" asp-action="GuardarVacuna" method="post">
+        <div class="row">
+            <div class="form-group col" style="text-align: center;">
+                <h1>
+                    <span class="badge badge-info">
+                        <label>Persona: </label>
+                        <label>@ViewBag.Persona</label>
+                        <input type="hidden" asp-for="IdPersona" value="@ViewBag.IdPersona">
+                    </span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+                <label>Enfermero: </label>
+                <select class="form-control" asp-for="IdEnfermero" asp-items="@(new SelectList(ViewBag.Enfermero, "IdPersona" , "NombrePersona"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label>Vacuna: </label>
+                <select class="form-control" asp-for="IdVacuna" asp-items="@(new SelectList(ViewBag.Vacuna, "IdVacuna" , "NombreVacuna"))">
+                    <option>Seleccione</option>
+                </select>
+            </div>        
+        </div>
+
+        <div class="row">
+            <div class="form-group col">
+                <label>Dosis: </label>
+                <input type="number" asp-for="Dosis" placeholder="Ingrese Dosis" required>
+            </div>
+            <div class="form-group col">
+                <label>Fecha: </label>
+                <input type="date" asp-for="Fecha_COMMIT" required>
+            </div>
+        </div>
+        <input type="hidden" asp-for="Token" value="@ViewBag.Token"> 
+        <input type="hidden" asp-for="Usuario" value="@ViewData["Usuario"]"> 
+        <input type="hidden" asp-for="IdUsuario" value="@ViewBag.Id">
+        <button type="submit" class="btn btn-primary" style="border-radius: 5rem;">Guardar</button>
+    </form>
+
+</div>

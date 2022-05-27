@@ -1,0 +1,25 @@
+@model LoginVM
+<div id="Login" class="jumbotron Login" style="margin-top: 1rem; margin-left: 35rem; background-color: #007bff; width: 30rem; height: 33rem;">
+    <div style="text-align: center; margin-top: -3rem; width: 26rem;">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+                <form asp-controller="Opciones" asp-action="LoginGuardar" method="post">
+                    <h3 class="mb-5">Iniciar Sesion</h3>
+
+                    <div class="form-outline mb-4">
+                        <input asp-for="Usuario" type="text" id="typeEmailX-2" class="form-control form-control-lg" />
+                        <label class="form-label" for="typeEmailX-2">Correo Electronico</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input asp-for="Clave" type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                        <label class="form-label" for="typePasswordX-2">Contraseña</label>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Iniciar Sesion</button>
+                </form>
+                <button id="BtnCancelar" class="btn btn-danger btn-lg btn-block" style="margin-top: 5px;" type="submit">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
